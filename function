@@ -1,0 +1,12 @@
+def tip_calculator():
+    try:
+        tip_input = input("Please enter the total cost of the meal: ")
+        meal_cost = float(tip_input)
+        tip = meal_cost * 0.18
+        print("You entered:", meal_cost)
+        print("Calculated tip (18%): $", round(tip, 2))
+    except ValueError:
+        print("Invalid input. Please enter a numeric value.")
+
+# Call the function
+tip_calculator()
